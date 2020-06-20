@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Detalle canción</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card>
+  <ion-card-title>
+    &nbsp;&nbsp;&nbsp;Detalle cancion 
+  </ion-card-title>
+  <ion-card-content>
+    <ion-column>
+      <ion-img [src]="picture"></ion-img>
+      <ion-item>
+        <ion-label>ID canción</ion-label>
+        {{id}}
+      </ion-item>
+      <ion-item>
+        <ion-label>Tipo</ion-label>
+        {{type}}
+      </ion-item>
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+        {{title}}
+      </ion-item>
+      <ion-item>
+        <ion-label>Artista</ion-label>
+        {{name}}
+      </ion-item>
+      <ion-item>
+        <ion-label>Duración</ion-label>
+        {{duration}}s
+      </ion-item>
+      <ion-button color="success" href="/home">Volver</ion-button>
+    </ion-column>
+  </ion-card-content>
+</ion-card>
+</ion-content>

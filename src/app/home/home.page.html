@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>PlayList</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let song of songs" [routerLink]="['/detail',song.id, song.artist.name, song.duration,song.album.type, song.artist.picture, song.title ]">
+      <ion-avatar slot="start">
+        <ion-img [src]="song.artist.picture"></ion-img>
+      </ion-avatar>
+      <ion-label>{{song.title  | uppercase}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
